@@ -1,0 +1,75 @@
+:root {
+  /* ===== COLORS - Primary ===== */
+  --color-blue-light: rgba(133, 212, 244, 1);
+  --color-yellow: rgba(234, 181, 61, 1);
+  --color-pink: rgba(237, 23, 125, 1);
+  --color-blue-dark: rgb(25, 23, 54);
+  --color-violet: rgba(65, 74, 186, 1);
+  --color-violet-light: rgba(65, 73, 186, 0.277);
+
+  /* ===== COLORS - Semantic ===== */
+  --color-bg: #ffffff;
+  --color-text: var(--color-blue-dark);
+  --color-text-secondary: #666666;
+  --color-text-light: #999999;
+  --color-border: #e5e5e5;
+  --color-code-bg: #f5f5f5;
+  --color-card-bg: #ffffff;
+  --color-tag-bg: #f0f0f0;
+  --color-tag-text: #666666;
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-heading: 'Segoe UI', sans-serif;
+  --font-body:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: monospace;
+
+  /* ===== FONT SIZES ===== */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.5rem; /* 40px */
+  --text-5xl: 3rem; /* 48px */
+
+  /* ===== FONT WEIGHTS ===== */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* ===== SPACING ===== */
+  --space-0: 0;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+
+  /* ===== BORDER RADIUS ===== */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ===== SHADOWS ===== */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}

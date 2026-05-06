@@ -1,0 +1,23 @@
+.projects-page {
+  flex: 1;
+}
+
+.page-title {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-8);
+  color: var(--color-violet);
+  letter-spacing: -1.68px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
