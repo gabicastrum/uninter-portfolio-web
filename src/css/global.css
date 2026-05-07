@@ -20,6 +20,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   text-rendering: optimizeLegibility;
+  transition: background-color var(--transition-base), color var(--transition-base);
 }
 
 #root {

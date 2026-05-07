@@ -71,6 +71,22 @@
   height: 24px;
 }
 
+.theme-toggle-button {
+  background: none;
+  border: none;
+  font-size: var(--text-xl);
+  cursor: pointer;
+  transition: transform var(--transition-base);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-button:hover {
+  transform: scale(1.2) rotate(20deg);
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;

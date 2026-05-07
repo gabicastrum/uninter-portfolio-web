@@ -7,7 +7,7 @@ export function Footer() {
   paragraph.appendChild(document.createTextNode('© 2026 Gabriela de Castro Laurindo — v1.0 • '))
 
   const link = document.createElement('a')
-  link.href = 'https://github.com/gabicastrum/portfolio-db'
+  link.href = 'https://github.com/gabicastrum/uninter-portfolio-web'
   link.target = '_blank'
   link.rel = 'noreferrer'
   link.textContent = 'Ver código no GitHub'

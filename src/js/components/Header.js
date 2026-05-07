@@ -21,8 +21,9 @@ export function Header(currentPage) {
 
   const pages = [
     { path: '/', label: 'Sobre' },
-    { path: '/details', label: 'Currículo' },
-    { path: '/projects', label: 'Projetos' },
+    { path: '/formation', label: 'Formação' },
+    { path: '/portfolio', label: 'Portfólio' },
+    { path: '/contact', label: 'Contato' },
   ]
 
   pages.forEach((page) => {
@@ -35,6 +36,23 @@ export function Header(currentPage) {
 
   const socialIcons = document.createElement('div')
   socialIcons.className = 'social-icons'
+
+  const themeButton = document.createElement('button')
+  themeButton.className = 'theme-toggle-button'
+  themeButton.setAttribute('aria-label', 'Alternar tema claro/escuro')
+  themeButton.innerHTML = '🌙'
+  
+  const updateThemeIcon = () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light'
+    themeButton.innerHTML = currentTheme === 'light' ? '🌙' : '☀️'
+  }
+  
+  updateThemeIcon()
+  
+  themeButton.addEventListener('click', () => {
+    window.toggleTheme()
+    updateThemeIcon()
+  })
 
   const githubLink = document.createElement('a')
   githubLink.href = 'https://github.com/gabicastrum'
@@ -60,8 +78,9 @@ export function Header(currentPage) {
 
   linkedinLink.appendChild(linkedinIcon)
 
-  const emailButton = CopyEmailButton('gabriela.laurindo@db.tec.br')
+  const emailButton = CopyEmailButton('gabrielacastro.tech@gmail.com')
 
+  socialIcons.appendChild(themeButton)
   socialIcons.appendChild(githubLink)
   socialIcons.appendChild(linkedinLink)
   socialIcons.appendChild(emailButton)
@@ -72,3 +91,4 @@ export function Header(currentPage) {
 
   return header
 }
+

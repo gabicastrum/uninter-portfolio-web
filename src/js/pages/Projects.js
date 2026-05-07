@@ -12,7 +12,7 @@ export function Projects() {
 
   const title = document.createElement('h1')
   title.className = 'page-title'
-  title.textContent = 'Meus Projetos'
+  title.textContent = 'Meu Portfólio'
 
   const projectsGrid = document.createElement('div')
   projectsGrid.className = 'projects-grid'

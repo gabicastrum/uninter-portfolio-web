@@ -15,9 +15,10 @@ export function CopyEmailButton(email) {
   button.addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(email)
-      Toast('Email copiado com sucesso!')
+      Toast({ message: 'Email copiado com sucesso!', type: 'success' })
     } catch (error) {
       console.error('Erro ao copiar', error)
+      Toast({ message: 'Erro ao copiar email', type: 'error' })
     }
   })
 

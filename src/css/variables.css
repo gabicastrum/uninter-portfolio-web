@@ -72,3 +72,17 @@
   --transition-base: 0.3s ease;
   --transition-slow: 0.5s ease;
 }
+
+/* Dark Theme */
+[data-theme='dark'] {
+  /* ===== COLORS - Semantic (Dark Mode) ===== */
+  --color-bg: #1a1a2e;
+  --color-text: #e0e0e0;
+  --color-text-secondary: #b0b0b0;
+  --color-text-light: #808080;
+  --color-border: #333333;
+  --color-code-bg: #2d2d2d;
+  --color-card-bg: #252540;
+  --color-tag-bg: #333333;
+  --color-tag-text: #b0b0b0;
+}
