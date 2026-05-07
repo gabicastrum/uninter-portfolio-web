@@ -10,7 +10,7 @@ export function Header(currentPage) {
   logoButton.setAttribute('aria-label', 'Ir para página inicial')
 
   const logo = document.createElement('img')
-  logo.src = 'src/assets/images/logo-db.png'
+  logo.src = 'src/assets/images/logo.png'
   logo.alt = 'Logo'
   logo.className = 'logo'
 

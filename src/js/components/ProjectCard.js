@@ -1,4 +1,4 @@
-const defaultImage = 'src/assets/images/logo-db-cinza.png'
+const defaultImage = 'src/assets/images/logo.png'
 
 export function ProjectCard(project) {
   const card = document.createElement('div')
